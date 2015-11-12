@@ -326,7 +326,8 @@ Lots of these taken from [this blog](http://www.ardendertat.com/2012/01/09/progr
   * Optimally, keep a max-heap of the smaller half of the numbers and a min-heap of the larger half of the numbers
 * **Infinite array search**: given a sorted, infinite-length array, find a given value
   * Modify binary search to start at the array's first element and exponentially increase the index you search at. Time is `O(log n)`
-* **Anagram pair**: determine if two words are anagrams
+* **Anagram pair**: determine if two words are anagrams.
+  * Mathematically, is multiset/bag A equivalent to multiset B? So either A U B = A and A U B = B. Multiset impl is still  `O(n log n )` (just to create a multiset, assuming some balanced tree based implementation) but is mathematically cleaner.
   * Comparison sort: sort the words in alphabetical order and check for equality. `O(n log n)`, where `n` is word length.
   * Count letters: use a hash table to track counts of letters in both words. `O(n)` runtime.
 * **Anagram dictionary**: determine which words in a list are anagrams of a given word
