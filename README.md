@@ -338,6 +338,7 @@ Lots of these taken from [this blog](http://www.ardendertat.com/2012/01/09/progr
   * For each node, track its possible minimum and maximum values
   * Performing an inorder traversal should produce a sorted list
 * **Largest continuous sum**: in an array of integers, determine the subsequence with the largest sum
+  * [Kadane's algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem) (dynamic programming)
   * Track maximum sum encountered so far and check whether current sum is greater. Reset current sum when it becomes negative. Time is `O(n)` and space is `O(1)`.
 * **-1/0/1 array**: given an array where values are -1, 0, or 1, sort the array
   * Bucket sort (but this takes `O(n)` space)
